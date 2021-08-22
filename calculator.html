@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+
+  <body>
+    <div class="calculator">
+        <form>
+            <input type="text" id="result" />
+        </form>
+        <div class="buttons1">
+            <div class="button1">
+                <button class="button" id="number7" value="7" onclick="edit(this)">7</button>
+                <button class="button" id="number8" value="8" onclick="edit(this)">8</button>
+                <button class="button" id="number9" value="9" onclick="edit(this)">9</button>
+                <button class="symbol" id="symbol1" value="+" onclick="edit(this)">+</button>
+            </div>
+
+            <div class="button2">
+                <button class="button" id="number4" value="4" onclick="edit(this)">4</button>
+                <button class="button" id="number5" value="5" onclick="edit(this)">5</button>
+                <button class="button" id="number6" value="6" onclick="edit(this)">6</button>
+                <button class="symbol" id="symbol2" value="-" onclick="edit(this)">-</button>
+            </div>
+
+            <div class="button3">
+                <button class="button" id="number1" value="1" onclick="edit(this)">1</button>
+                <button class="button" id="number2" value="2" onclick="edit(this)">2</button>
+                <button class="button" id="number3" value="3" onclick="edit(this)">3</button>
+                <button class="symbol" id="symbol3" value="*" onclick="edit(this)">*</button>
+            </div>
+            
+            <div class="button4">
+                <button class="button" id="number11" value="0" onclick="edit(this)">0</button>
+                <button class="button" id="number10" value="00" onclick="edit(this)">00</button>
+                <button class="symbol" id="symbol4" value="." onclick="edit(this)">.</button>
+                <button class="symbol" id="symbol5" value="/" onclick="edit(this)">/</button>
+            </div>
+        
+            <div class="button5">
+                <button class="button" id="AC" value="AC" onclick="document.querySelector( 'input' ).value = '' ">AC</button>
+                <button class="button" value="=" onclick="calc()">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ここに記述していきましょう！ -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
